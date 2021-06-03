@@ -36,16 +36,16 @@ text_style = {
 
 # Load model
 current_folder = os.path.dirname(__file__)
-protein_clf = joblib.load(os.path.join(current_folder, 'clf_20N_Protein.joblib'))
-meta_clf = joblib.load(os.path.join(current_folder, 'clf_20N_meta.joblib'))
+protein_clf = joblib.load(os.path.join(current_folder, './assets/clf_20N_Protein.joblib'))
+meta_clf = joblib.load(os.path.join(current_folder, './assets/clf_20N_meta.joblib'))
 mlp_model = R_Net(20, 20).to("cpu")
-mlp_model.load_state_dict(torch.load("./mlp_model.pth"))
+mlp_model.load_state_dict(torch.load("./assets/mlp_model.pth"))
 mlp_model.eval()
-mlp_dataset_obj = torch.load("./torch_dataset.data")
-clinical_clf = joblib.load(os.path.join(current_folder, 'clf_clinical.joblib'))
+mlp_dataset_obj = torch.load("./assets/torch_dataset.data")
+clinical_clf = joblib.load(os.path.join(current_folder, './assets/clf_clinical.joblib'))
 # load the scaler
-scaler_protein = pickle.load(open('./scaler_protein.pkl', 'rb'))
-scaler_meta = pickle.load(open('./scaler_meta.pkl', 'rb'))
+scaler_protein = pickle.load(open('./assets/scaler_protein.pkl', 'rb'))
+scaler_meta = pickle.load(open('./assets/scaler_meta.pkl', 'rb'))
 
 DATAPATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
 
