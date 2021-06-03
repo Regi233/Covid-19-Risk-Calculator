@@ -1,0 +1,9 @@
+﻿Our classification,Description,WHO Oridinal Scale
+Healthy,Uninfected,0
+Mild,No limitation of activities,1
+Mild,Limitation of activities,2
+Moderate,"Hospitalised, no oxygen therapy",3
+Moderate,Oxygen by mask or nasal prongs,4
+Severe,Non-invasive ventilation or high-flow oxygen,5
+Severe,Intubation and mechanical ventilation,6
+Severe,"Ventilation + additional organ support – pressors, RRT, ECMO",7
