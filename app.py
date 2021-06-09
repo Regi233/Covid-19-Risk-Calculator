@@ -117,7 +117,8 @@ def layout():
                                 ),
                                 html.P(
                                     """
-                                    This product uses proteomics, metabolomics, and clinical data to predict a COVID-19 severity response of healthy, mild, moderate, or severe. This product is targeted towards doctors, health professionals and researchers with access to patients’ omics data; however, the general public may also utilise this tool by inputting their clinical characteristics
+                                    This product uses proteomics, metabolomics, and clinical data to predict a COVID-19 severity response of healthy, mild, moderate, or severe. This product is targeted towards doctors and health professionals with access to patients’ omics data; however, the general public may also utilise this tool by inputting their clinical characteristics.
+
                                     """
                                 ),
                                 
